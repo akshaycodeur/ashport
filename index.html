@@ -9,11 +9,13 @@
     <!-- Fullpage -->
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
 
+    <!-- GoogleFont -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800" rel="stylesheet" type="text/css" />
     <style>
 
         :root {
-        --blue: #6495ed;
-        --white: #faf0e6;
+        --primary-blue: #00a8ff;
+        --gun-metalic: #252934;
         }
 
         .section{height: 100vh;}
@@ -22,8 +24,58 @@
         .fp-watermark {display: none;}
 
         .full-height{height: 100vh;}
-        #sectionOne{background-color: #252934;color: #fafafa;}
-        .hero span{color: #1B7FE3;}
+        #sectionOne{background-color: var(--gun-metalic);color: #fafafa;}
+        .background-lights {
+            background-color: #252934;
+            background-size: cover;
+            background-position: center bottom; 
+            overflow: hidden;
+            position: relative;
+        }
+        .hero span{color: var(--primary-blue);}
+
+        .snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: 
+  radial-gradient(2px 2px at 100px 50px, #fff , transparent), 
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 4s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+	margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
     </style>
 
   </head>
@@ -31,7 +83,8 @@
 
     <div id="fullpage">
         <div class="section">
-            <div id="sectionOne" class="full-height d-flex align-items-center">
+            <div id="sectionOne" class="full-height d-flex align-items-center background-lights">
+                <div class="snow"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6 text-center hero">
