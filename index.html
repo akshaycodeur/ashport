@@ -24,11 +24,9 @@
 
 
         /*Typography*/
-        body {
-            color:#222;
-            font-family:'Open Sans', sans-serif;
-            font-size:13px;
-        }
+        body{ color:#222; font-family:'Open Sans', sans-serif; font-size:13px;}
+        h2.headline{ font-size: 3rem; font-weight: 600; margin-bottom: 2rem}
+
 
         .section{height: 100vh;}
         .sectionOne{background-color: aqua;}
@@ -101,35 +99,18 @@
         .skillset{ background: rgba(37, 41, 52, .7); color: var(--off-white); margin: 4rem 0 0 0; padding: 3rem}
         .skillset p span{font-weight: bolder;color: var(--primary-blue);}
 
-        .bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #fff 50%, #efefef 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:absolute;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
+        .bg{ animation:slide 3s ease-in-out infinite alternate; background-image: linear-gradient(30deg, #18689a 50%, #242833 50%); bottom:0; left:-50%; opacity:.5; position:absolute; right:-50%; top:0; z-index:-1}
+        .bg2{ animation-direction:alternate-reverse; animation-duration:4s}
+        .bg3{ animation-duration:5s}
+        @keyframes slide{ 0%{ transform:translateX(-25%);} 100%{ transform:translateX(25%);}}
 
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
+        /*Project Section*/
+        #sectionThree{background-color: #00a8ff;}
+        .project{display: grid;grid-template-columns: 1fr 1fr;}
+        .project-image{height: 25rem; background-color: #222;background-image: ;}
+        .project-description { align-self: center}
 
-.bg3 {
-  animation-duration:5s;
-}
 
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
     </style>
 
   </head>
@@ -160,7 +141,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-5 about-slant">
-                            <h2 class="heading">About_</h2>
+                            <h2 class="headline">About<span class="blink">_</span></h2>
                             <div class="about-para">
                                 <p>I am Ash. I am a web developer with a penchant towards UI.</p>
                                 <p>I believe that understanding the fundamentals is key to solid development. I focus a lot on the vanilla part. That said, I still do use front-end/back-end frameworks</p>
@@ -200,8 +181,41 @@
                 </div>
             </div>
         </div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
+        <div class="section">
+            <div id="sectionThree" class="full-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h2 class="headline">A few projects<span class="blink">_</span></h2>
+
+                            <div class="project project-one">
+                                <div class="project-description">
+                                    <div class="project-category">Beauty / Fashion</div>
+                                    <div class="project-title">Make up Artist</div>
+                                    <p>Page made for a popular make up and hair stylist based in New Jersey.</p>
+                                    <div class="link"><a href="">Open Project</a></div>
+                                </div>
+                                <div class="project-image"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="sectionFour" class="full-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h2 class="headline">Send me a message<span class="blink">_</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>    
 
 
