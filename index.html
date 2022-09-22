@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Ash - Web designing is brainpower made visible</title>
+    <meta name="description" content="Web development is brainpower made visible">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
 
     <!-- Fullpage -->
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
@@ -12,106 +15,14 @@
     <!-- GoogleFont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
 
-    <style>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
 
-        :root {
-        --primary-blue: #00a8ff;
-        --gun-metalic: #252934;
-        --off-white: #ecf0f1;
-        }
-
-
-        /*Typography*/
-        body{ color:#222; font-family:'Open Sans', sans-serif; font-size:13px;}
-        h2.headline{ font-size: 3rem; font-weight: 600; margin-bottom: 2rem}
-
-
-        .section{height: 100vh;}
-        .sectionOne{background-color: aqua;}
-        .sectionTwo{background-color: lightblue;}
-        .fp-watermark {display: none;}
-
-        .full-height{height: 100vh;}
-        #sectionOne{background-color: var(--gun-metalic);color: #fafafa;}
-        .background-lights{ background-color: #252934; background-size: cover; background-position: center bottom; overflow: hidden; position: relative;}
-        .hero h4{font-size: 1.2rem;}
-        .hero h5{font-size: 1rem; color:var(--off-white) ; font-weight: 100; }
-        .hero h4 span{color: var(--primary-blue);font-size: 2rem;}
-        h2 span.type{border-bottom: 3px solid var(--primary-blue);}
-        .typewriter{ height: 3rem; display: flex; justify-content: center;margin:2rem 0;}
-        span.typed-cursor{ font-size: 2rem; line-height: 1.75rem; width: 0;}
-
-        .snow, .snow:before, .snow:after {
-            position: absolute;
-            top: -650px;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-image: 
-            radial-gradient(2px 2px at 100px 50px, #fff , transparent), 
-            radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
-            radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
-            radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
-            radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
-            radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
-            radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
-            radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
-            radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
-            background-size: 650px 650px;
-            animation: snow 4s linear infinite;
-            content: "";
-        }
-
-        .snow:after {
-        margin-left: -250px;
-        opacity: 0.5;
-        filter: blur(2px);
-        animation-duration: 6s;
-        animation-direction: reverse;
-        }
-
-        .snow:before {
-            margin-left: -350px;
-        opacity: 0.7;
-        filter: blur(1px);
-        animation-duration: 9s;
-        animation-direction: reverse;
-        }
-
-        @keyframes snow {
-        to {
-            transform: translateY(650px);
-        }
-        }
-
-        /*About*/
-        #sectionTwo{ background: ;position:relative!important;}
-        #sectionTwo h2,
-        .about-para{color: var(--off-white);}
-        .about-para{ text-align: justify}
-
-        .charts h4{color: var(--off-white); font-size: 1.1rem; margin-top: 1rem;}
-        .progress-bar.bg-light{ background-color: var(--primary-blue)!important;}
-        .border{border: none!important;}
-        .progress { --bs-progress-height: .5rem}
-        .skillset{ background: rgba(37, 41, 52, .7); color: var(--off-white); margin: 4rem 0 0 0; padding: 3rem}
-        .skillset p span{font-weight: bolder;color: var(--primary-blue);}
-
-        .bg{ animation:slide 3s ease-in-out infinite alternate; background-image: linear-gradient(30deg, #18689a 50%, #242833 50%); bottom:0; left:-50%; opacity:.5; position:absolute; right:-50%; top:0; z-index:-1}
-        .bg2{ animation-direction:alternate-reverse; animation-duration:4s}
-        .bg3{ animation-duration:5s}
-        @keyframes slide{ 0%{ transform:translateX(-25%);} 100%{ transform:translateX(25%);}}
-
-        /*Project Section*/
-        #sectionThree{background-color: #00a8ff;}
-        .project{display: grid;grid-template-columns: 1fr 1fr;}
-        .project-image{height: 25rem; background-color: #222;background-image: ;}
-        .project-description { align-self: center}
-
-
-    </style>
+    <!-- Ash CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
 
   </head>
   <body>
@@ -122,12 +33,191 @@
                 <div class="snow"></div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-8 text-center hero">
+                        <div class="col-md-6 hero">
                             <h4>Hello, I am <span>Ash</span></h4>
                             <div class="typewriter">
-                                <h2 class="">I am a <span class="type"></span></h2>
+                                <h2 class=""><span class="type"></span></h2>
                             </div>
                             <h5>I am to develop pages which a aesthetically pleasing while keeping in mind</h5>
+                            <h5>It's not just about writing code. There is a wholesome process such as problem identification, research and developement, <coding>, testing and eventually running this loop again and again.</h5>
+                        </div>
+                        <div class="col-md-6 laptop-container">
+                            <div class="laptop">
+                                <div class="wrap">
+                                    <div class="comp">
+                                        <div class="monitor">
+                                            <div class="mid">
+                                                <div class="site">
+                                                    <div class="topbar">
+                                                        <div class="cerrar">
+                                                            <div class="circl"></div>
+                                                            <div class="circl"></div>
+                                                            <div class="circl"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inhead">
+                                                        <div class="mid">
+                                                            <div class="item"></div>
+                                                        </div>
+                                                        <div class="mid txr">
+                                                            <div class="item"></div>
+                                                            <div class="item"></div>
+                                                            <div class="item"></div>
+                                                            <div class="item"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inslid">
+                                                        
+                                                    </div>
+                                                    <div class="incont">
+                                                        <div class="item"></div>
+                                                        <div class="item"></div>
+                                                        <div class="item"></div>
+                                                        <div class="item"></div>
+                                                        <div class="wid">
+                                                            <div class="itwid">
+                                                                <div>
+                                                                    <div class="contfoot"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itwid">
+                                                                <div>
+                                                                    <div class="contfoot"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itwid">
+                                                                <div>
+                                                                    <div class="contfoot"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div class="infoot">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mid codigo">
+                                                <div class="line">
+                                                    <div class="item var"></div>
+                                                    <div class="item cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="item min var"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="item var"></div>
+                                                    <div class="item atr"></div>
+                                                    <div class="item cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item lrg fun"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item lrg cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item lrg atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item min cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item atr"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item min cont"></div>
+                                                    <div class="item lrg atr"></div>
+                                                    <div class="item  fun"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item lrg fun"></div>
+                                                    <div class="item lrg cont"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab2">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab2">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab3">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item lrg fun"></div>
+                                                    <div class="item lrg cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab3">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item lrg atr"></div>
+                                                    <div class="item lrg cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab4">
+                                                    <div class="item min fun"></div>
+                                                    <div class="item lrg atr"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab1">
+                                                    <div class="item atr"></div>
+                                                    <div class="item var"></div>
+                                                    <div class="item cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab3">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line tab4">
+                                                    <div class="item min atr"></div>
+                                                    <div class="item min fun"></div>
+                                                    <div class="item lrg atr"></div>
+                                                    <div class="item lrg cont"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="item min var"></div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="base">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +258,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="skillset">
                                 <p><span>Front End:</span> HTML5, CSS, Javascript, Jquery, AJAX, React, SASS/Less, Bootstrap, Materialize, Tailwind</p>
                                 <p><span>Back End:</span> php, REST Api, MySQL</p>
@@ -188,14 +278,23 @@
                         <div class="col-md-10">
                             <h2 class="headline">A few projects<span class="blink">_</span></h2>
 
-                            <div class="project project-one">
-                                <div class="project-description">
-                                    <div class="project-category">Beauty / Fashion</div>
-                                    <div class="project-title">Make up Artist</div>
-                                    <p>Page made for a popular make up and hair stylist based in New Jersey.</p>
-                                    <div class="link"><a href="">Open Project</a></div>
+                            <div class="projectslide">
+                                <div class="project">
+                                    <div class="project-description">
+                                        <h4>makeup artist</h4>
+                                        <h5>Wordpress</h5>
+                                        <p>While keeping a minimalistic idea in mind, the designed had an interactive and informative approach displaying all the recent work of the client</p>
+                                    </div>
+                                    <div class="project-image"></div>
                                 </div>
-                                <div class="project-image"></div>
+                                <div class="project">
+                                    <div class="project-description">
+                                        <h4>Law Firm</h4>
+                                        <h5>Wordpress</h5>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+                                    </div>
+                                    <div class="project-image"></div>
+                                </div>
                             </div>
 
                         </div>
@@ -221,25 +320,57 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.extensions.min.js" integrity="sha512-5Hucxlc1JrSsUMFww/29PlyRbkldth692MJ5mt6V2TDohejfKHmtwsSGhh2MYR7Sd+Rh777xYYxyJVuGBsR/mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Ash JS -->
+    <script src="assets/javascript/custom.js"></script>
+
     <script>
-        new fullpage('#fullpage', {
-            //options here
-            autoScrolling:true,
-            scrollHorizontally: true
+        
+
+        $(document).ready(function(){
+            $('.projectslide').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+            });
         });
-    </script>
-    <script>
-        var typed = new Typed('.type', {
-        strings: ['Front End Developer', 'Remote Developer', 'UI/UX Designer'],
-        loop: true,
-        backSpeed: 100,
-        showCursor: true,
-        cursorChar: '|',
-        autoInsertCss: true,
-        typeSpeed: 100,
-        smartBackspace: true // Default value
-        });
+
     </script>
   </body>
 </html>
