@@ -269,18 +269,30 @@
     .bg3{ animation-duration:5s}
     @keyframes slide{ 0%{ transform:translateX(-25%);} 100%{ transform:translateX(25%);}}
 
-    .skills{position: relative;}
-    .charts{opacity: 1; position: absolute; left: 0; width: 100%; padding:0 2rem}
-
 
     /*Project Section*/
     #sectionThree{background-color: var(--gun-metalic);}
+    #sectionThree h2 {color: var(--off-white);}
     .project{display: grid!important;grid-template-columns: 1fr 1fr;}
-    .project-image{height: 25rem;min-width: 300px; background-size:cover ; background-color: #00a8ff;}
+    .project-image{height: 25rem;min-width: 300px; background-size:cover ;}
     .project-description { align-self: center; padding: 3rem; background-color:  rgba(37, 41, 52, .7);}
     .project-description h4{font-size:2rem;margin-bottom:1rem;color:#6e838f;}
     .project-description h5{font-size:1rem;margin-bottom:1rem;color:var(--off-white)}
     .project-description p{color: var(--off-white);}
 
-    .project-image-1{background-image: url('assets/images/snapshot1.png');}
-    .project-image-1{background-color: purple!important;}
+    .project-image-1{background-image: url('/assets/images/snapshot1.png');}
+    .project-image-2{background-image: url('/assets/images/snapshot2.png');}
+    .project-image-3{background-image: url('/assets/images/snapshot3.png');}
+    .project-image-4{background-image: url('/assets/images/snapshot4.png');}
+
+
+    @media screen and (max-width: 992px) {
+      .typewriter { height:7rem}
+      .typewriter h2{line-height: 4.5rem;}
+    }
+
+    @media screen and (max-width: 769px) {
+      .project{display: row!important;grid-template-columns:1fr;}
+      .project-description{background-color: rgba(20,20,20);}
+      .laptop { scale:1;}
+    }
