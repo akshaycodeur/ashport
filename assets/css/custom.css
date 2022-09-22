@@ -276,5 +276,11 @@
     /*Project Section*/
     #sectionThree{background-color: var(--gun-metalic);}
     .project{display: grid!important;grid-template-columns: 1fr 1fr;}
-    .project-image{height: 25rem; background-color: red;background-image: ;}
-    .project-description { align-self: center}
+    .project-image{height: 25rem;min-width: 300px; background-size:cover ; background-color: #00a8ff;}
+    .project-description { align-self: center; padding: 3rem; background-color:  rgba(37, 41, 52, .7);}
+    .project-description h4{font-size:2rem;margin-bottom:1rem;color:#6e838f;}
+    .project-description h5{font-size:1rem;margin-bottom:1rem;color:var(--off-white)}
+    .project-description p{color: var(--off-white);}
+
+    .project-image-1{background-image: url('assets/images/snapshot1.png');}
+    .project-image-1{background-color: purple!important;}
