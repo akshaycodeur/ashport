@@ -285,6 +285,10 @@
     .project-image-3{background-image: url('/assets/images/snapshot3.png');}
     .project-image-4{background-image: url('/assets/images/snapshot4.png');}
 
+    /*Contact Section*/
+    .form-control{margin:1rem 0}
+    input.btn.btn-submit{background:var(--primary-blue);color:#fff;border-radius:0;width:100%; transition: all 300ms;}
+    input.btn.btn-submit:hover{background:var(--gun-metalic);color:#fff;border-radius:0;width:100%; transition: all 300ms;}
 
     @media screen and (max-width: 992px) {
       .typewriter { height:7rem}
