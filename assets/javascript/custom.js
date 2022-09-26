@@ -60,3 +60,19 @@ var typed = new Typed('.type', {
         ]
         });
     });
+
+
+    const progressbar = document.querySelectorAll('.progress');
+    window.addEventListener('scroll', checkBoxes);
+    checkBoxes();
+
+    function checkBoxes(){
+        const triggerBottom = window.innerHeight / 4 ;
+        progressbar.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+            if(boxTop < triggerBottom){
+                box.classList.add('testclass')
+            }
+            console.log(triggerBottom);
+        })
+    }
